@@ -6,5 +6,21 @@ import { Component } from '@angular/core';
   styles: []
 })
 export class AppComponent {
-  title = 'my-first-project';
+  isAuth = false;
+
+  appareilOne = 'Machine à laver';
+  appareilTwo = 'Télévision';
+  appareilThree = 'Ordinateur';
+  constructor () {
+  	setTimeout (
+  		() => {
+  			this.isAuth = true;
+  		}, 4000
+  		);
+  }
+
+  onAllumer () {
+
+  }
+
 }
